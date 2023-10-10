@@ -9,30 +9,35 @@ import Foundation
 
 
 struct Calculations {
+    
+    enum DivisionError: Error {
+        case divisionByZero
+    }
+    func sinOperation(_ val1: Int) -> Double {
+        return sin(Double(val1))
+    }
+    
+    func addOperation(_ val1: Int, _ val2: Int) -> Int {
+        return val1 + val2
+    }
+    
+    func subOperation(_ val1: Int, _ val2: Int) -> Int {
+        return val1 - val2
+    }
+    
+    func multiplyOperation(_ val1: Int, _ val2: Int) -> Int {
+        return val1 * val2
+    }
+    
+    func divOperation(_ val1: Double, _ val2: Double) throws -> Double {
+        guard val2 != 0 else {
+            throw DivisionError.divisionByZero
+        }
+        return Double(val1 / val2)
+    }
     func calculateResult(_ val1: String, _ val2: String, _ currentOperator: String, _ errorMessage: inout String) -> String {
         
-        func sinOperation(_ val1: Int) -> Double {
-            return sin(Double(val1))
-        }
         
-        func addOperation(_ val1: Int, _ val2: Int) -> Int {
-            return val1 + val2
-        }
-        
-        func subOperation(_ val1: Int, _ val2: Int) -> Int {
-            return val1 - val2
-        }
-        
-        func multiplyOperation(_ val1: Int, _ val2: Int) -> Int {
-            return val1 * val2
-        }
-        
-        func divOperation(_ val1: Double, _ val2: Double) throws -> Double {
-            guard val2 != 0 else {
-                throw DivisionError.divisionByZero
-            }
-            return Double(val1 / val2)
-        }
         var result: String
         
         switch currentOperator {
@@ -59,14 +64,14 @@ struct Calculations {
                 return result
                 
             }   catch DivisionError.divisionByZero {
-                errorMessage = "Don't divide by 0!"
+                errorMessage = "Niedozwolona operacja."
                 
             }   catch {}
         default:
             print("Switch Case default statement. Calcultion files.")
         }
         
-        return "Calculations file error Switch Case ommited."
+        return ""
     }
     
     
