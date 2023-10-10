@@ -14,6 +14,11 @@
 		3F5C36B92AD53E6C0052F3CC /* KalkulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5C36B82AD53E6C0052F3CC /* KalkulatorTests.swift */; };
 		3F5C36C32AD53E6C0052F3CC /* KalkulatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5C36C22AD53E6C0052F3CC /* KalkulatorUITests.swift */; };
 		3F5C36C52AD53E6C0052F3CC /* KalkulatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5C36C42AD53E6C0052F3CC /* KalkulatorUITestsLaunchTests.swift */; };
+		3F5C36D22AD53EE30052F3CC /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5C36D12AD53EE30052F3CC /* Calculations.swift */; };
+		3F5C36D72AD53F0A0052F3CC /* ButtonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5C36D62AD53F0A0052F3CC /* ButtonFunctions.swift */; };
+		3F5C36D92AD53F380052F3CC /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5C36D82AD53F380052F3CC /* ButtonView.swift */; };
+		3F5C36DC2AD53F850052F3CC /* ErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5C36DB2AD53F850052F3CC /* ErrorEnum.swift */; };
+		3F5C36DF2AD53F960052F3CC /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5C36DE2AD53F960052F3CC /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		3F5C36BE2AD53E6C0052F3CC /* KalkulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KalkulatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5C36C22AD53E6C0052F3CC /* KalkulatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalkulatorUITests.swift; sourceTree = "<group>"; };
 		3F5C36C42AD53E6C0052F3CC /* KalkulatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KalkulatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F5C36D12AD53EE30052F3CC /* Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
+		3F5C36D62AD53F0A0052F3CC /* ButtonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFunctions.swift; sourceTree = "<group>"; };
+		3F5C36D82AD53F380052F3CC /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		3F5C36DB2AD53F850052F3CC /* ErrorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorEnum.swift; sourceTree = "<group>"; };
+		3F5C36DE2AD53F960052F3CC /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,10 @@
 		3F5C36A62AD53E6A0052F3CC /* Kalkulator */ = {
 			isa = PBXGroup;
 			children = (
+				3F5C36DA2AD53F770052F3CC /* Errors */,
+				3F5C36D12AD53EE30052F3CC /* Calculations.swift */,
+				3F5C36D82AD53F380052F3CC /* ButtonView.swift */,
+				3F5C36D62AD53F0A0052F3CC /* ButtonFunctions.swift */,
 				3F5C36A72AD53E6A0052F3CC /* KalkulatorApp.swift */,
 				3F5C36A92AD53E6A0052F3CC /* ContentView.swift */,
 				3F5C36AB2AD53E6C0052F3CC /* Assets.xcassets */,
@@ -125,6 +139,15 @@
 				3F5C36C42AD53E6C0052F3CC /* KalkulatorUITestsLaunchTests.swift */,
 			);
 			path = KalkulatorUITests;
+			sourceTree = "<group>";
+		};
+		3F5C36DA2AD53F770052F3CC /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				3F5C36DB2AD53F850052F3CC /* ErrorEnum.swift */,
+				3F5C36DE2AD53F960052F3CC /* ErrorView.swift */,
+			);
+			path = Errors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +281,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F5C36AA2AD53E6A0052F3CC /* ContentView.swift in Sources */,
+				3F5C36D22AD53EE30052F3CC /* Calculations.swift in Sources */,
+				3F5C36D92AD53F380052F3CC /* ButtonView.swift in Sources */,
 				3F5C36A82AD53E6A0052F3CC /* KalkulatorApp.swift in Sources */,
+				3F5C36DF2AD53F960052F3CC /* ErrorView.swift in Sources */,
+				3F5C36D72AD53F0A0052F3CC /* ButtonFunctions.swift in Sources */,
+				3F5C36DC2AD53F850052F3CC /* ErrorEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
