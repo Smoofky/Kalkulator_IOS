@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 struct Calculations {
     func calculateResult(_ val1: String, _ val2: String, _ currentOperator: String, _ errorMessage: inout String) -> String {
         
@@ -37,7 +38,8 @@ struct Calculations {
         switch currentOperator {
         case "sin()":
             result = String(format: "%.2f", sinOperation(Int(val1)!))
-            return "sin(" + result + ")"
+            
+            return result
             
         case "+":
             result = String(addOperation(Int(val1)!, Int(val2)!))

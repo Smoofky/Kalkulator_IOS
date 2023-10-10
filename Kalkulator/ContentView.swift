@@ -21,7 +21,7 @@ struct ContentView: View {
         ["4", "5", "6"],
         ["7", "8", "9"],
         ["0", "+", "-"],
-        ["*", "/", "sin"]
+        ["*", "/", "sin()"]
     ]
     
     var body: some View {

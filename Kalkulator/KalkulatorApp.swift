@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+
 struct KalkulatorApp: App {
     var body: some Scene {
         WindowGroup {

@@ -13,13 +13,7 @@ let operators = [ "+", "-", "*", "/", "sin()"]
 
 
 func buttonTapHandler(_ buttonTitle: String, _ firstNumber: inout String, _ secondNumber: inout String, _ currentOperator: inout String, _ isFirstNumber: inout Bool, _ errorMessage: inout String) -> Void {
-    /*
-     
-     @TODO
-     SIN() handler
-     
-     */
-    
+
     if numbers.contains(buttonTitle) {
         isFirstNumber ? (firstNumber += buttonTitle) : (secondNumber += buttonTitle)
         
